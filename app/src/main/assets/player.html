@@ -1,0 +1,47 @@
+<html style="background: #1b493f !important;">
+
+<head>
+   <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+
+		var slika = document.getElementById("slika");
+
+		slika.src="pause.png";
+
+		document.getElementById("pp").onclick = pause;
+      }
+    </script>
+
+   <script>
+      function pause() {
+        var audio = document.getElementById("audio");
+        audio.pause();
+
+		var slika = document.getElementById("slika");
+
+		slika.src="play.png";
+
+		document.getElementById("pp").onclick = play;
+      }
+    </script>
+</head>
+<body>
+
+<div style="border: 6px solid #082620; border-radius: 20px; width: 130px; background-image: linear-gradient(to right top, #0c637c, #00687a, #006d74, #00716c, #007461, #007463, #007565, #007567, #007275, #006e80, #006989, #10638c);">
+   <a id="pp" href="#" onclick="play();">
+      <center>
+         <img id="slika" src="play.png" style="padding-top: 10px; padding-bottom: 10px;" height="100" alt="Play" /></center>
+   </a>
+
+</div>
+
+<audio id="audio" src="https://streaming.radiojat.rs/radiojat.mp3">
+   <p>nema leba</p>
+   <embed src="https://streaming.radiojat.rs/radiojat.mp3" width="180" height="90" hidden="true" />
+</audio>
+
+
+</body>
+</html>

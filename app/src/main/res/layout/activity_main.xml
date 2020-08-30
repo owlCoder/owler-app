@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/pozadina" >
+
+
+        <ImageButton
+                android:id="@+id/profilna"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/p"
+                />
+
+        <com.android.owler.FontAwesome
+            android:id="@+id/podaci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Danijel Jovanović"
+            android:textColor="#ffffff"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="140dp"
+            android:textSize="26dp" />
+
+        <com.android.owler.FontAwesome
+            android:id="@+id/podaci2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Developer: OOP, UI/UX, C#, Java 😄 "
+            android:textColor="#ffffff"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="140dp"
+            android:textSize="14dp" />
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/kalendar"
+            app:mcv_calendarMode="week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="#3f64a3"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:mcv_arrowColor="@android:color/white"
+            app:mcv_headerTextAppearance="@android:color/white"
+            android:background="@drawable/kalendar" />
+
+        <WebView
+            android:id="@+id/vreme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="200dp"
+            android:paddingBottom="300dp" />
+
+        <WebView
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="100dp" />
+
+
+
+        <WebView
+            android:id="@+id/sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="555dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="220dp" />
+
+        <WebView
+            android:id="@+id/cc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginRight="35dp"
+            android:paddingBottom="220dp" />
+
+        <Button
+            android:id="@+id/opn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="730dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="OTVARANJE PRETRAŽIVAČA"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:onClick="otvori"
+            android:background="@drawable/backbtn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom" >
+
+        <Button
+            android:id="@+id/hmb"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="750dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/homebtn"
+            android:onClick="zatvori"
+            android:text="IZLAZ"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/pocetnaStr"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="750dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/pbtn"
+            android:onClick="runGoogle"
+            android:text="Početna"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+
+
+        <WebView
+            android:id="@+id/br"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
